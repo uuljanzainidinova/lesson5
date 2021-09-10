@@ -6,11 +6,8 @@ public class Hero {
     private int superpower;
 
     public Hero(){
-        this.health = health;
-        this.damage = damage;
-        this.superpower = superpower;
-
     }
+
     public Hero(int health, int damage){
         this.health = health;
         this.damage = damage;

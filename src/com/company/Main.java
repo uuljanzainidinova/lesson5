@@ -14,16 +14,17 @@ public class Main {
         System.out.println("BossHealth:" + " " + boss.getHealth() + "  " +
                 ("BossDamage:" + " " + boss.getDamage() + "  " + "BossDefenceType:" + " " + boss.getDefenceType()));
 
-        /*createHeroes();{
-            for (int i = 0; i < 2; i++) {
-                System.out.println();
-            }
+        createHeroes();
+        for (Hero hero : createHeroes()) {
+            System.out.println("" + hero.getDamage() +" "+ hero.getHealth() +" "+ hero.getSuperpower());
+        }
 
-        }*/
+
+
     }
 
 
-   /* public static void createHeroes() {
+    public static Hero[] createHeroes() {
         Hero hero1 = new Hero() {
         };
         hero1.setHealth(200);
@@ -36,10 +37,15 @@ public class Main {
 
         Hero hero3 = new Hero(34, 67);
 
-        Hero[] Hero = new Hero[]{hero1, hero2, hero3};
-        return;
+        Hero[] heroes = new Hero[]{hero1, hero2, hero3};
+        return heroes;
+        /*for (int i = 0; i < Hero.length; i++) {
+            Hero[i] = new Hero();
+            System.out.println(Hero[i]);
+            return;
 
-    }*/
+        }*/
+    }
 }
 
 
